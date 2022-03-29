@@ -8,6 +8,11 @@
     height: 100vh;
     width: 100%;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .chain{
     display: grid;
     grid-template-columns: repeat(28,1fr);
