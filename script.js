@@ -57,10 +57,16 @@ learn_chain.querySelectorAll("div").forEach((day,index)=>{
 container.querySelectorAll(".day").forEach(day=>{
     day.addEventListener("mouseenter",function(e){
         e.target.style.color="white"
+        e.target.style.backgroundColor=`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`
+        e.target.style.transform="scaleY(1.5)"
+        document.body.style.background=`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`
     })
 })
 container.querySelectorAll(".day").forEach(day=>{
     day.addEventListener("mouseleave",function(e){
         e.target.style.color="black"
+        e.target.style.backgroundColor=``
+        e.target.style.transform="scale(1)"
+        document.body.style.background=``
     })
 })
