@@ -1,0 +1,29 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root{
+    height: 100vh;
+    width: 100%;
+}
+.chain{
+    display: grid;
+    grid-template-columns: repeat(28,1fr);
+}
+.day{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    height: 5vmin;
+    font-weight: 700;
+    color: black;
+}
+.day:hover{
+    background-color: #2F3C7E;
+}
